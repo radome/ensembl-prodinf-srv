@@ -8,7 +8,7 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 
 from ensembl_prodinf.utils import app_logging
-from ensembl_prodinf import HiveInstance
+from ensembl_prodinf.models import HiveInstance
 from ensembl_prodinf.email_tasks import email_when_complete
 
 logger = logging.getLogger(__name__)

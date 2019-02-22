@@ -10,11 +10,9 @@ from flasgger import Swagger
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 
-from ensembl_prodinf.utils import app_logging
 from ensembl_prodinf import HiveInstance
-from ensembl_prodinf.db_utils import list_databases, get_database_sizes
+from ensembl_prodinf.utils import list_databases, get_database_sizes, get_status, get_load, app_logging
 from ensembl_prodinf.email_tasks import email_when_complete
-from ensembl_prodinf.server_utils import get_status, get_load
 
 logger = logging.getLogger(__name__)
 

@@ -4,7 +4,7 @@ import os
 import unittest
 
 import hc_app
-from ensembl_prodinf.hive import Base
+from ensembl_prodinf.models.hive import Base
 
 dirpath = os.path.dirname(os.path.abspath(__file__))
 

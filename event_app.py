@@ -6,7 +6,7 @@ import json
 from flasgger import Swagger
 
 from ensembl_prodinf import reporting
-from ensembl_prodinf import HiveInstance
+from ensembl_prodinf.models import HiveInstance
 from ensembl_prodinf.event_tasks import process_result
 import event_config
 

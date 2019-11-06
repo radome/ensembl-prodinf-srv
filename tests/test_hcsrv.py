@@ -21,7 +21,7 @@ class HcSrvTest(unittest.TestCase):
         # logging.info("Connecting to hive test sqlite database " + dirpath + "/test_hc.db")
         hc_app.app.config['HIVE_URI'] = "sqlite://"
         Base.metadata.create_all(hc_app.get_hive().engine)
-        with open('./create_db.sql') as f:
+        with open('tests/create_db.sql') as f:
             conn = hc_app.get_hive().engine.connect()
             for aline in f:
                 conn.execute(aline)
